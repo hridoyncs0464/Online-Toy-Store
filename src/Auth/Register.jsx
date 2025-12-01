@@ -26,7 +26,7 @@ const Register = () => {
       setPasswordError("Password must contain at least one uppercase letter.");
       return;
     }
-
+ 
     if (!/[a-z]/.test(password)) {
       setPasswordError("Password must contain at least one lowercase letter.");
       return;
