@@ -120,9 +120,7 @@ googleSignIn().then(res =>{
                 placeholder="Password"
               />
 
-              {/* <div>
-                <a className="link link-hover">Forgot password?</a>
-              </div> */}
+              
                <div>
                 <button
                   type="button"

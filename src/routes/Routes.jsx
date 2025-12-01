@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       {
         path: "/auth/register",
         element: <Register />,
-      },
+      }, 
     ],
   },
 
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
         <ToyDetails></ToyDetails>
       </PrivateRoute>
     ),
-    loader: () => fetch("/Toys.json"),
+    loader: () => fetch("/Toys.json").then((res) => res.json()),    
   },
 ]);
 export default router;
