@@ -80,7 +80,7 @@ const [message, setMessage] = useState("");
     
 googleSignIn().then(res =>{
     console.log(res);
-        navigate(location.state?.from || "/");
+        navigate("/");
 
 }).catch(error =>{
     console.log(error)
@@ -148,12 +148,24 @@ googleSignIn().then(res =>{
 
 
 
+
+
+
+              <p className=" py-5 text-center">
+                Do not have an account ?{" "}
+                <Link className="font-bold text-red-600" to="/auth/register">
+                  Register
+                </Link>{" "}
+              </p>
+            </fieldset>
+          </form>
+          
               <p className="font-bold text-red-600 flex text-center justify-center">
                 or
               </p>
 
               {/* Google */}
-              <button onClick={handleGoogleLogin} className="btn bg-white  text-black border-[#e5e5e5]">
+              <button onClick={handleGoogleLogin} className="btn bg-white my-5  text-black border-[#e5e5e5]">
                 <svg   
                   aria-label="Google logo"
                   width="16"
@@ -184,18 +196,6 @@ googleSignIn().then(res =>{
                 Login with Google
               </button>
 
-
-
-
-              <p className=" py-5 text-center">
-                Do not have an account ?{" "}
-                <Link className="font-bold text-red-600" to="/auth/register">
-                  Register
-                </Link>{" "}
-              </p>
-            </fieldset>
-          </form>
-          
 
           
         </div>

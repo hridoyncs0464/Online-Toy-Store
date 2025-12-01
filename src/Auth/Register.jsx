@@ -76,14 +76,14 @@ const Register = () => {
       });
   };
 
-
+   
 
 
   const handleGoogleRegister = () => {
     setPasswordError("");
     googleSignIn().then(() => {
         
-        navigate(location.state?.from || "/");
+        navigate("/");
       }).catch((err) => {
         // setError(err.code || "Google login failed");
       });
@@ -161,12 +161,23 @@ const Register = () => {
                 Register
               </button>
              
-              <p className="font-bold text-red-600 flex text-center justify-center">
-                or
+             
+
+              <p className=" py-5 text-center">
+                Already have an account ?{" "}
+                <Link className="font-bold text-red-600" to="/auth/login">
+                  Login
+                </Link>{" "}
               </p>
+            </fieldset>
+          </form>
+
+ <p className="font-bold text-red-600 flex  text-center justify-center">
+                or
+              </p> 
 
               {/* Google */}
-              <button onClick={handleGoogleRegister} className="btn bg-white text-black border-[#e5e5e5]">
+              <button onClick={handleGoogleRegister} className="btn my-5 bg-white text-black border-[#e5e5e5]">
                 <svg
                   aria-label="Google logo"
                   width="16"
@@ -196,17 +207,6 @@ const Register = () => {
                 </svg>
                 Register with Google
               </button>
-
-              <p className=" py-5 text-center">
-                Already have an account ?{" "}
-                <Link className="font-bold text-red-600" to="/auth/login">
-                  Login
-                </Link>{" "}
-              </p>
-            </fieldset>
-          </form>
-
-
 
         </div>
       </div>
