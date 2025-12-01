@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
+import useTitle from "../hooks/useTitle";
 
-const MyOrders = () => {
+const MyOrders = () => { 
+     useTitle("ToyTopia | My Orders");
+
   const { user } = useContext(AuthContext);
 
   return (

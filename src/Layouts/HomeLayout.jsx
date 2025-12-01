@@ -1,12 +1,14 @@
 import React from "react";
-import { Outlet } from "react-router";
+import { Outlet, useNavigation } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhyChoseUs from "../components/WhyChoseUs";
 import ToySwiper from "../Swiper/ToySwiper";
 import FunFacts from "../Pages/FunFacts";
+import Loading from "../Pages/Loading";
 
 const HomeLayout = () => {
+   const {state} = useNavigation();
   return (
     <div>
       <header>
@@ -25,8 +27,8 @@ const HomeLayout = () => {
                 </section> */}
                 
                <ToySwiper></ToySwiper>
-          
-        <Outlet></Outlet>
+          { state == "loading" ? <Loading></Loading> :   <Outlet></Outlet>}
+       
         <WhyChoseUs></WhyChoseUs>
          <FunFacts></FunFacts>
       </main>

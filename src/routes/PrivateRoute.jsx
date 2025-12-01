@@ -14,12 +14,14 @@ const PrivateRoute = ({children}) => {
     if(loading){
         return <Loading></Loading>;
     }
-    if(user   ){
+    if(user ){
         return children;
     }
 
     // redirect to login and save the attempted path in state.from
-    return <Navigate to="/auth/login" state={location.pathname} replace />;
+    return <Navigate  to="/auth/login"  state={{ from: location.pathname }}
+  replace />;
 };
 
 export default PrivateRoute;
+// state={location.pathname}

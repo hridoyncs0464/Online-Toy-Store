@@ -16,7 +16,7 @@ import Loading from "../Pages/Loading";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/",  
     element: <HomeLayout></HomeLayout>,
     errorElement: <ErrorPage />, 
     children: [
@@ -63,6 +63,9 @@ const router = createBrowserRouter([
     },
   ],
 },
+
+
+
 {
 
   path:"/toys-details/:toyId",
@@ -70,6 +73,7 @@ const router = createBrowserRouter([
     <ToyDetails></ToyDetails>
   </PrivateRoute>),
   loader: ()=> fetch("/Toys.json"),
+  hydrateFallbackElement:<Loading></Loading>
 
 
 },

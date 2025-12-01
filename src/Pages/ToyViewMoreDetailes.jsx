@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import useTitle from '../hooks/useTitle';
 
 const ToyViewMoreDetailes = ({toy}) => {
+  useTitle(`ToyTopia | ${toy.toyName}`); 
 
 const {
     toyId,
@@ -15,7 +17,7 @@ const {
     subCategory,
   } = toy;
 
-
+ 
 const [formData, setFormData] = useState({ name: '', email: '' });
   const [successMessage, setSuccessMessage] = useState('');
 

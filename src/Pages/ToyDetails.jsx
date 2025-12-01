@@ -2,13 +2,15 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { useLoaderData, useParams } from "react-router";
 import ToyViewMoreDetailes from "./ToyViewMoreDetailes";
+import useTitle from "../hooks/useTitle";
 
 const ToyDetails = () => {
+
   const data = useLoaderData();
   const { toyId } = useParams();
 
   const toy = data.find((t) => String(t.toyId) === String(toyId));
-
+ useTitle(toy ? `ToyTopia | ${toy.toyName}` : "ToyTopia | Toy Details");
   if (!toy) {
     return (
       <div>

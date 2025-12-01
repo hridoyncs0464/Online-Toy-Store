@@ -1,8 +1,8 @@
 import React, { createContext, useEffect, useState } from "react";
-import app from "../Firebase/Firebase.config";
+// import app from "../Firebase/Firebase.config";
 import {
   createUserWithEmailAndPassword,
-  getAuth,
+  
   GoogleAuthProvider,
   onAuthStateChanged,
   sendPasswordResetEmail,
@@ -11,14 +11,17 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
-const googleProvider = new GoogleAuthProvider();
+import { auth } from "../Firebase/Firebase.config";
 
 export const AuthContext = createContext();
-
- export const auth = getAuth(app);
+  
 
 const AuthProvider = ({ children }) => {
+
+
   const [user, setUser] = useState(null);
+  const googleProvider = new GoogleAuthProvider();
+
   const [loading, setLoading] = useState(true); // use setLoading
 
   const createUser = (email, password) => {
@@ -42,7 +45,7 @@ const AuthProvider = ({ children }) => {
       })
       .catch((err) => {
         setLoading(false);
-        throw err;
+        // throw err;
       });
   };
 
@@ -55,7 +58,7 @@ const resetPassword = (email) => {
       })
       .catch(err => {
         setLoading(false);
-        throw err;
+        // throw err;
       });
   };
 
@@ -63,18 +66,18 @@ const resetPassword = (email) => {
  const googleSignIn = () => {
     setLoading(true);
     return signInWithPopup(auth, googleProvider)
-     
-    
-    .then((result) => {
-        setUser(result.user);
-        setLoading(false);
-        return result;
-      })
-      .catch((err) => {
-        setLoading(false);
-        throw err;
-      });
+    //   .then((result) => {
+    //     setUser(result.user);
+    //     setLoading(false);
+    //     return result;
+    //   })
+    //   .catch((err) => {
+    //     setLoading(false);
+    //     throw err;
+    //   });
 
+    
+   
 
   };
 

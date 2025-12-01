@@ -1,7 +1,11 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../provider/AuthProvider";
+import useTitle from "../hooks/useTitle";
 
-const MyProfile = () => {
+const MyProfile = () => { 
+
+      useTitle("ToyTopia | My Profile"); 
+
   const { user, loading, updateUserProfile } = useContext(AuthContext);
   const [isEditing, setIsEditing] = useState(false);
   const [editData, setEditData] = useState({
@@ -58,6 +62,8 @@ const MyProfile = () => {
       setUpdating(false);
     }
   };
+
+  
 
   return (
     <div className="min-h-[60vh] flex justify-center items-center px-4 py-12 bg-base-100">

@@ -2,9 +2,13 @@ import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import useTitle from "../hooks/useTitle";
 // import { Link } from 'react-router';
 
 const Register = () => {
+
+      useTitle("ToyTopia | Register");
+
   const { createUser, setUser, updateUserProfile, googleSignIn } =
     useContext(AuthContext);
 
@@ -42,7 +46,7 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         // console.log(user);
-           navigate("/");
+        //    navigate("/");
         return updateUserProfile({
           displayName: name,
           photoURL: photoURL,
@@ -77,12 +81,10 @@ const Register = () => {
 
   const handleGoogleRegister = () => {
     setPasswordError("");
-    googleSignIn()
-      .then(() => {
+    googleSignIn().then(() => {
         
         navigate(location.state?.from || "/");
-      })
-     .catch((err) => {
+      }).catch((err) => {
         // setError(err.code || "Google login failed");
       });
 
@@ -92,8 +94,12 @@ const Register = () => {
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left"></div>
+    
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form onSubmit={handleRegister} className="card-body">
+       
+       
+       
+ <form onSubmit={handleRegister} className="card-body">
             <h1 className="text-3xl font-bold">Register now!</h1>
 
             <fieldset className="fieldset">
@@ -154,6 +160,7 @@ const Register = () => {
               <button type="submit" className="btn btn-neutral mt-4">
                 Register
               </button>
+             
               <p className="font-bold text-red-600 flex text-center justify-center">
                 or
               </p>
@@ -198,6 +205,9 @@ const Register = () => {
               </p>
             </fieldset>
           </form>
+
+
+
         </div>
       </div>
     </div>

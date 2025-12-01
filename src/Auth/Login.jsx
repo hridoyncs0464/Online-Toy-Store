@@ -1,10 +1,13 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
+import useTitle from "../hooks/useTitle";
 // import { signInWithEmailAndPassword } from 'firebase/auth';
 // import { resume } from 'react-dom/server';
 
-const Login = () => {
+const Login = () => { 
+      useTitle("ToyTopia | Login");
+
   const { signIn ,resetPassword,googleSignIn,setUser,setLoading} = useContext(AuthContext);
 
   const location = useLocation();
@@ -45,12 +48,7 @@ const [message, setMessage] = useState("");
       })
       .catch((error) => {
         const errorCode = error.code;
-        //   const errorMassage = error.massage;eg
-
-        // console.log(errorCode);
-        //    alert(  " " +errorCode);
         setError(errorCode);
-        //  setError(errorMassage);
       });
   };
 
@@ -75,36 +73,18 @@ const [message, setMessage] = useState("");
       setError(err.code || "Failed to send reset email.");
     }
   };
-
+ 
 
  const handleGoogleLogin = () => {
-    setError("");
-    setMessage("");
-    googleSignIn()
-     
-    //  .then((result) => {
-    //     // setUser(result.user);
-    //     // setLoading(false);
-    //     navigate("/");
-    //     return result;
-    //   })
-    //   .catch((err) => {
-    //     // setLoading(false);
-    //     // throw err;
-    //   });
-
-
+  console.log(googleSignIn) ;
     
-    
-    .then(() => {
-        
-        navigate(location.state?.from || "/");
-      })
-     .catch((err) => {
-        setError(err.code || "Google login failed");
-      });
+googleSignIn().then(res =>{
+    console.log(res);
+    navigate(location.state?.from || "/", { replace: true });
 
-
+}).catch(error =>{
+    console.log(error)
+})
 
   };
 
@@ -114,6 +94,8 @@ const [message, setMessage] = useState("");
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left"></div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+       
+       
           <form onSubmit={handleLogin} className="card-body">
             <h1 className="text-3xl font-bold">Login now!</h1>
 
@@ -173,8 +155,8 @@ const [message, setMessage] = useState("");
               </p>
 
               {/* Google */}
-              <button onClick={handleGoogleLogin} className="btn bg-white text-black border-[#e5e5e5]">
-                <svg
+              <button onClick={handleGoogleLogin} className="btn bg-white  text-black border-[#e5e5e5]">
+                <svg   
                   aria-label="Google logo"
                   width="16"
                   height="16"
@@ -215,6 +197,9 @@ const [message, setMessage] = useState("");
               </p>
             </fieldset>
           </form>
+          
+
+          
         </div>
       </div>
     </div>
