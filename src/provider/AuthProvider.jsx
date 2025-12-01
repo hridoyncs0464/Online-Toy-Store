@@ -2,7 +2,6 @@ import React, { createContext, useEffect, useState } from "react";
 // import app from "../Firebase/Firebase.config";
 import {
   createUserWithEmailAndPassword,
-  
   GoogleAuthProvider,
   onAuthStateChanged,
   sendPasswordResetEmail,
@@ -14,11 +13,8 @@ import {
 import { auth } from "../Firebase/Firebase.config";
 
 export const AuthContext = createContext();
-  
 
 const AuthProvider = ({ children }) => {
-
-
   const [user, setUser] = useState(null);
   const googleProvider = new GoogleAuthProvider();
 
@@ -49,30 +45,22 @@ const AuthProvider = ({ children }) => {
       });
   };
 
-
-const resetPassword = (email) => {
+  const resetPassword = (email) => {
     setLoading(true);
     return sendPasswordResetEmail(auth, email)
       .then(() => {
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setLoading(false);
         // throw err;
       });
   };
 
-
- const googleSignIn = () => {
+  const googleSignIn = () => {
     setLoading(true);
-    return signInWithPopup(auth, googleProvider)
-   
-
+    return signInWithPopup(auth, googleProvider);
   };
-
-
-   
-
 
   const Logout = () => {
     setLoading(true);

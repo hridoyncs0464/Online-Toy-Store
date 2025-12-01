@@ -16,8 +16,7 @@ const HomeLayout = () => {
       </header>
       <main>
 
-
-                
+        
                <ToySwiper></ToySwiper>
           { state == "loading" ? <Loading></Loading> :   <Outlet></Outlet>}
        
