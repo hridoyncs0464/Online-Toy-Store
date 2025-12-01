@@ -1,0 +1,122 @@
+[
+  {
+    "toyId": 1,
+    "toyName": "Lego Classic Bricks",
+    "sellerName": "ToyTopia Store",
+    "sellerEmail": "sales@toytopia.com",
+    "price": 49.99,
+    "rating": 4.7,
+    "availableQuantity": 70,
+    "description": "A colourful Lego brick set packed with classic pieces for open-ended building. Children can create simple models at first and gradually move to more complex structures as their skills grow. The variety of shapes, colours, and sizes inspires unlimited creativity and storytelling. It helps improve fine motor skills, hand–eye coordination, and spatial awareness. Ideal for solo play or group projects where kids can share and build together.",
+    "pictureURL": "https://www.lego.com/cdn/cs/set/assets/blt70b9a332af0de5cd/4_11030_Classic_Sidekick_tall.jpg?fit=crop&format=jpg&quality=80&width=800&height=600&dpr=1",
+    "subCategory": "Building Blocks"
+  },
+  {
+    "toyId": 2,
+    "toyName": "Wooden Train Set",
+    "sellerName": "FunKids Local",
+    "sellerEmail": "contact@funkids.com",
+    "price": 34.50,
+    "rating": 4.5,
+    "availableQuantity": 40,
+    "description": "A classic wooden train set featuring smooth magnetic joints for easy connection. Children can build different track layouts and guide the train through curves and bridges. The natural wooden finish with bright colours makes it attractive and durable. Playing with the set encourages problem solving, imagination, and early STEM thinking. Perfect for both quiet playtime and interactive sessions with friends or parents.",
+    "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT60WpNN6qRr7LPC4H-JxM-Sjd1FVXv_HWWsw&s",
+    "subCategory": "Wooden Toys"
+  },
+  {
+    "toyId": 3,
+    "toyName": "Remote Control Car",
+    "sellerName": "KidsZone BD",
+    "sellerEmail": "hello@kidszonebd.com",
+    "price": 29.99,
+    "rating": 4.8,
+    "availableQuantity": 55,
+    "description": "A sleek remote control car designed for speed and smooth handling on most indoor surfaces. The responsive controller allows children to practise precise turns, quick starts, and fun racing challenges. A strong rechargeable battery keeps the car running for longer play sessions. It helps kids develop coordination, focus, and quick reaction skills. Great for outdoor driveways, living rooms, or friendly competitions with siblings.",
+    "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI_jKIDtiq5TR7uQ1JmgW99kFKXo4tEvuFQA&s",
+    "subCategory": "Remote Control"
+  },
+  {
+    "toyId": 4,
+    "toyName": "Barbie Fashion Doll",
+    "sellerName": "DreamToys",
+    "sellerEmail": "support@dreamtoys.com",
+    "price": 22.90,
+    "rating": 4.4,
+    "availableQuantity": 90,
+    "description": "A stylish Barbie fashion doll dressed in modern, colourful clothing and matching accessories. Children can create their own stories around school, parties, or travel adventures. The articulated body lets the doll be posed for realistic play and display. Swapping outfits and accessories supports creativity and self-expression. Ideal for kids who enjoy role‑play, storytelling, and building a doll collection.",
+    "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReD5-ccNyQmy7UlWBxZLIKzHrpVVTGOSzPdw&s",
+    "subCategory": "Dolls"
+  },
+  {
+    "toyId": 5,
+    "toyName": "Plush Teddy Bear",
+    "sellerName": "CuteCorner",
+    "sellerEmail": "cute@corner.com",
+    "price": 18.75,
+    "rating": 4.6,
+    "availableQuantity": 120,
+    "description": "A soft, cuddly teddy bear made from gentle, hypoallergenic fabric that feels cosy to hug. The friendly face and fluffy body make it a comforting bedtime companion. It is light enough for small children to carry around the house or on trips. Easy-to-clean materials help parents keep the bear fresh and safe. Perfect as a first soft toy or a special gift for birthdays and celebrations.",
+    "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YhgqX3n7HFh7-unSYrPjXySGmjFpYPuowA&s",
+    "subCategory": "Soft Toys"
+  },
+  {
+    "toyId": 6,
+    "toyName": "Kids Puzzle Blocks",
+    "sellerName": "BrainBoost Toys",
+    "sellerEmail": "boost@brain.com",
+    "price": 15.99,
+    "rating": 4.3,
+    "availableQuantity": 85,
+    "description": "A set of colourful puzzle blocks designed to be stacked, matched, and arranged into simple patterns. Children can experiment with shapes and colours while building towers and designs. The chunky pieces are easy for small hands to grip and move. Playing with the blocks improves problem‑solving skills, logical thinking, and hand–eye coordination. Ideal for early learners who love experimenting and discovering new combinations.",
+    "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR670LYave5L-3LiFue3EAYEfwvYcgXbJL0Rw&s",
+    "subCategory": "Educational Toys"
+  },
+  {
+    "toyId": 7,
+    "toyName": "Mini Drone Kids Edition",
+    "sellerName": "SkyFun",
+    "sellerEmail": "info@skyfun.com",
+    "price": 42.00,
+    "rating": 4.9,
+    "availableQuantity": 25,
+    "description": "A compact kids’ drone with protective guards and simplified controls for safer flying. One‑button take‑off and landing help beginners learn without frustration. The drone can perform smooth flights and fun tricks like small flips, exciting young pilots. Built‑in lights make it more visible and enjoyable during evening play. A great choice for introducing children to basic flight control and outdoor exploration.",
+    "pictureURL": "https://m.media-amazon.com/images/I/71E9OoypmRL._AC_SL1500_.jpg",
+    "subCategory": "Remote Control"
+  },
+  {
+    "toyId": 8,
+    "toyName": "Kitchen Play Set",
+    "sellerName": "PlayHouse BD",
+    "sellerEmail": "play@housebd.com",
+    "price": 26.50,
+    "rating": 4.5,
+    "availableQuantity": 65,
+    "description": "A colourful pretend kitchen set that includes mini pots, pans, utensils, and play-food items. Children can act out cooking scenes, serving meals to family members or dolls. The pieces are sized for little hands and made from child‑safe materials. Role‑playing as a chef encourages communication, creativity, and social skills. Perfect for setting up a small play kitchen corner in the living room or kids’ room.",
+    "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSRX3jMGkreo9MkL85Ilx8-Dl7fyRi2QJixg&s",
+    "subCategory": "Pretend Play"
+  },
+  {
+    "toyId": 9,
+    "toyName": "Rubber Duck Bath Toy",
+    "sellerName": "BabyJoy",
+    "sellerEmail": "baby@joy.com",
+    "price": 7.99,
+    "rating": 4.2,
+    "availableQuantity": 150,
+    "description": "A classic yellow rubber duck designed to float happily on bath water. The soft, squeezable body makes gentle squeaking sounds that delight young children. Its smooth surface is easy to rinse and wipe clean after every bath. The toy turns regular washing time into a playful, relaxed experience. Ideal for babies and toddlers who are just getting used to spending time in the tub.",
+    "pictureURL": "https://i5.walmartimages.com/asr/327c8588-e839-42ef-802b-185fd49f2638.490946a5e488a67b147d54d64b771a5c.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+    "subCategory": "Bath Toys"
+  },
+  {
+    "toyId": 10,
+    "toyName": "Space Adventure Rocket",
+    "sellerName": "GalaxyToys",
+    "sellerEmail": "galaxy@toys.com",
+    "price": 33.99,
+    "rating": 4.7,
+    "availableQuantity": 48,
+    "description": "A detailed toy rocket that invites children to imagine space missions and alien worlds. The design includes bright colours and clear sections to spark curiosity about space. Kids can use it to act out take‑offs, landings, and planetary explorations. Playing with the rocket encourages storytelling, creativity, and early interest in science. Great for little space fans who love astronauts, planets, and galaxies.",
+    "pictureURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZqlv7YrEo2nE0rV_MkNLrADrfUQxU5-KcA&s",
+    "subCategory": "Action Toys"
+  }
+]
