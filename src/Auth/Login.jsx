@@ -8,7 +8,7 @@ import useTitle from "../hooks/useTitle";
 const Login = () => { 
       useTitle("ToyTopia | Login");
 
-  const { signIn ,resetPassword,googleSignIn,setUser,setLoading} = useContext(AuthContext);
+  const { signIn ,resetPassword,googleSignIn} = useContext(AuthContext);
 
   const location = useLocation();
 console.log(location);
@@ -80,11 +80,11 @@ const [message, setMessage] = useState("");
     
 googleSignIn().then(res =>{
     console.log(res);
-    navigate(location.state?.from || "/", { replace: true });
+        navigate(location.state?.from || "/");
 
 }).catch(error =>{
     console.log(error)
-})
+}) 
 
   };
 
@@ -94,7 +94,7 @@ googleSignIn().then(res =>{
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left"></div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-       
+        
        
           <form onSubmit={handleLogin} className="card-body">
             <h1 className="text-3xl font-bold">Login now!</h1>

@@ -17,14 +17,6 @@ const HomeLayout = () => {
       <main>
 
 
- {/* <section className="text-center py-5  bg-white">
-                    <h1 className="text-4xl md:text-5xl font-bold text-green-600 mb-4">
-                        Welcome to ToyTopia
-                    </h1>
-                    <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-                        Discover fun and educational toys for every age.
-                    </p>
-                </section> */}
                 
                <ToySwiper></ToySwiper>
           { state == "loading" ? <Loading></Loading> :   <Outlet></Outlet>}

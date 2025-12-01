@@ -66,17 +66,6 @@ const resetPassword = (email) => {
  const googleSignIn = () => {
     setLoading(true);
     return signInWithPopup(auth, googleProvider)
-    //   .then((result) => {
-    //     setUser(result.user);
-    //     setLoading(false);
-    //     return result;
-    //   })
-    //   .catch((err) => {
-    //     setLoading(false);
-    //     throw err;
-    //   });
-
-    
    
 
   };
@@ -107,6 +96,7 @@ const resetPassword = (email) => {
     updateUserProfile,
     resetPassword,
     googleSignIn,
+    setUser,
   };
 
   return (

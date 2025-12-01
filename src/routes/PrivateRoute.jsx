@@ -18,10 +18,10 @@ const PrivateRoute = ({children}) => {
         return children;
     }
 
-    // redirect to login and save the attempted path in state.from
-    return <Navigate  to="/auth/login"  state={{ from: location.pathname }}
-  replace />;
+    return <Navigate   to="/auth/login"  state={location.pathname}  />;
 };
 
 export default PrivateRoute;
 // state={location.pathname}
+// state={{ from: location.pathname }}
+//   replace
