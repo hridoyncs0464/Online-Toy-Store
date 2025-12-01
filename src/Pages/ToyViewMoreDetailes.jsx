@@ -24,7 +24,7 @@ const [formData, setFormData] = useState({ name: '', email: '' });
 const handleInputChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
-
+                     
   const handleTryNowSubmit = (e) => {
     e.preventDefault();
     setSuccessMessage('Thank you for trying! We will contact you soon.');
@@ -33,7 +33,7 @@ const handleInputChange = (e) => {
   };
 
     return (
-          
+                            
        <>
       <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-6 md:flex gap-6">
         <div className="md:w-1/2">

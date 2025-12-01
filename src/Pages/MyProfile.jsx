@@ -163,7 +163,7 @@ const MyProfile = () => {
             </div>
           </form>
         )}
-
+                   
         <div className="space-y-3 p-5  rounded-xl border">
           <h3 className="font-bold text-lg text-gray-800 flex items-center gap-2">
             <span className="text-blue-600">📋</span> Account Details
