@@ -22,6 +22,3 @@ const PrivateRoute = ({children}) => {
 };
 
 export default PrivateRoute;
-// state={location.pathname}
-// state={{ from: location.pathname }}
-//   replace
