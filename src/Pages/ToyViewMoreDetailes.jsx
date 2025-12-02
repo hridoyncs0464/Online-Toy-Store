@@ -76,7 +76,7 @@ const handleInputChange = (e) => {
           </div>
         )}
 
-        <form onSubmit={handleTryNowSubmit} className="space-y-4">
+                 <form onSubmit={handleTryNowSubmit} className="space-y-4">
           <div>
             <label htmlFor="name" className="block mb-1 font-medium">
               Name
@@ -118,13 +118,6 @@ const handleInputChange = (e) => {
         </form>
       </div>
     </>
-
-
-
-
-
-
-
 
 
 
